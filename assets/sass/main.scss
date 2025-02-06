@@ -588,6 +588,9 @@ $size-header-pad: 4em;
 		}
 	}
 
+
+/* Html */
+
 	.html{
 		border-radius: _size(border-radius);
 		border: 0;
@@ -596,7 +599,7 @@ $size-header-pad: 4em;
 
 		&:before {
 			@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
-			background: url('images/overlay.png');
+			background: url('images/overlay1.png');
 			border-radius: _size(border-radius);
 			content: '';
 			display: block;
@@ -638,7 +641,7 @@ $size-header-pad: 4em;
 				}
 
 				&:before {
-					background: url('images/overlay.png'), url('images/overlay.png');
+					background: url('images/overlay1.png'), url('images/overlay1.png');
 					opacity: 1.0;
 				}
 			}

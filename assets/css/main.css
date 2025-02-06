@@ -2035,21 +2035,21 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 
-/* Image */
+/* Html */
 
 	.html {
 		border-radius: 0.35em;
 		border: 0;
 		display: inline-block;
 		position: relative;
-	}
+	}	
 
 		.html:before {
 			-moz-transition: opacity 0.2s ease-in-out;
 			-webkit-transition: opacity 0.2s ease-in-out;
 			-ms-transition: opacity 0.2s ease-in-out;
 			transition: opacity 0.2s ease-in-out;
-			background: url("images/overlay.png");
+			background: url("images/overlay1.png");
 			border-radius: 0.35em;
 			content: '';
 			display: block;
@@ -2094,7 +2094,7 @@ input, select, textarea {
 			}
 
 			.html.thumb:hover:before {
-				background: url("htmls/overlay.png"), url("htmls/overlay.png");
+				background: url("images/overlay1.png"), url("images/overlay1.png");
 				opacity: 1.0;
 			}
 
@@ -2125,7 +2125,7 @@ input, select, textarea {
 
 		.html.fit {
 			display: block;
-			margin: 0 0 2em 0;
+			margin: 0 0 1.5em 0;
 			width: 100%;
 		}
 
@@ -2146,114 +2146,6 @@ input, select, textarea {
 				width: 100%;
 			}
 
-			.html {
-				border-radius: 0.35em;
-				border: 0;
-				display: inline-block;
-				position: relative;
-			}
-		
-				.html:before {
-					-moz-transition: opacity 0.2s ease-in-out;
-					-webkit-transition: opacity 0.2s ease-in-out;
-					-ms-transition: opacity 0.2s ease-in-out;
-					transition: opacity 0.2s ease-in-out;
-					background: url("htmls/overlay.png");
-					border-radius: 0.35em;
-					content: '';
-					display: block;
-					height: 100%;
-					left: 0;
-					opacity: 0.5;
-					position: absolute;
-					top: 0;
-					width: 100%;
-				}
-		
-				.html.thumb {
-					text-align: center;
-				}
-		
-					.html.thumb:after {
-						-moz-transition: opacity 0.2s ease-in-out;
-						-webkit-transition: opacity 0.2s ease-in-out;
-						-ms-transition: opacity 0.2s ease-in-out;
-						transition: opacity 0.2s ease-in-out;
-						border-radius: 0.35em;
-						border: solid 3px rgba(255, 255, 255, 0.5);
-						color: #fff;
-						content: 'View';
-						display: inline-block;
-						font-size: 0.8em;
-						font-weight: 400;
-						left: 50%;
-						line-height: 2.25em;
-						margin: -1.25em 0 0 -3em;
-						opacity: 0;
-						padding: 0 1.5em;
-						position: absolute;
-						text-align: center;
-						text-decoration: none;
-						top: 50%;
-						white-space: nowrap;
-					}
-		
-					.html.thumb:hover:after {
-						opacity: 1.0;
-					}
-		
-					.html.thumb:hover:before {
-						background: url("htmls/overlay.png"), url("htmls/overlay.png");
-						opacity: 1.0;
-					}
-		
-				.html img {
-					border-radius: 0.35em;
-					display: block;
-				}
-		
-				.html.left {
-					float: left;
-					margin: 0 1.5em 1em 0;
-					top: 0.25em;
-				}
-		
-				.html.right {
-					float: right;
-					margin: 0 0 1em 1.5em;
-					top: 0.25em;
-				}
-		
-				.html.left, .html.right {
-					max-width: 40%;
-				}
-		
-					.html.left img, .html.right img {
-						width: 100%;
-					}
-		
-				.html.fit {
-					display: inside;
-					margin: 0 0 2em 0;
-					width: 100%;
-				}
-		
-					.html.fit img {
-						width: 100%;
-					}
-		
-				.html.avatar {
-					border-radius: 100%;
-				}
-		
-					.html.avatar:before {
-						display: none;
-					}
-		
-					.html.avatar img {
-						border-radius: 100%;
-						width: 100%;
-					}
 /* Image */
 
 .image {
