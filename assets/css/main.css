@@ -7,7 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
+html, .html1, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
@@ -2145,6 +2145,116 @@ input, select, textarea {
 				border-radius: 100%;
 				width: 100%;
 			}
+/* Html */
+
+	.html1 {
+		border-radius: 0.35em;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}	
+
+		.html1:before {
+			-moz-transition: opacity 0.2s ease-in-out;
+			-webkit-transition: opacity 0.2s ease-in-out;
+			-ms-transition: opacity 0.2s ease-in-out;
+			transition: opacity 0.2s ease-in-out;
+			background: url("images/overlay.png");
+			border-radius: 0.35em;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.html1.thumb {
+			text-align: center;
+		}
+
+			.html1.thumb:after {
+				-moz-transition: opacity 0.2s ease-in-out;
+				-webkit-transition: opacity 0.2s ease-in-out;
+				-ms-transition: opacity 0.2s ease-in-out;
+				transition: opacity 0.2s ease-in-out;
+				border-radius: 0.35em;
+				border: solid 3px rgba(255, 255, 255, 0.5);
+				color: #fff;
+				content: 'View';
+				display: inline-block;
+				font-size: 0.8em;
+				font-weight: 400;
+				left: 50%;
+				line-height: 2.25em;
+				margin: -1.25em 0 0 -3em;
+				opacity: 0;
+				padding: 0 1.5em;
+				position: absolute;
+				text-align: center;
+				text-decoration: none;
+				top: 50%;
+				white-space: nowrap;
+			}
+
+			.html1.thumb:hover:after {
+				opacity: 1.0;
+			}
+
+			.html1.thumb:hover:before {
+				background: url("images/overlay.png"), url("images/overlay.png");
+				opacity: 1.0;
+			}
+
+		.html1 img {
+			border-radius: 0.35em;
+			display: block;
+		}
+
+		.html1.left {
+			float: left;
+			margin: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		.html1.right {
+			float: right;
+			margin: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.html1.left, .html1.right {
+			max-width: 40%;
+		}
+
+			.html1.left img, .html1.right img {
+				width: 100%;
+			}
+
+		.html1.fit {
+			display: block;
+			margin: 0 0 1.5em 0;
+			width: 100%;
+		}
+
+			.html1.fit img {
+				width: 100%;
+			}
+
+		.html1.avatar {
+			border-radius: 100%;
+		}
+
+			.html1.avatar:before {
+				display: none;
+			}
+
+			.html1.avatar img {
+				border-radius: 100%;
+				width: 100%;
+			}
 
 /* Image */
 
@@ -2253,8 +2363,8 @@ input, select, textarea {
 		}
 
 		.image.avatar img {
-			border-radius: 100%;
-			width: 100%;
+			border-radius: 150%;
+			width: 150%;
 		}
 
 		.image {
@@ -2362,8 +2472,8 @@ input, select, textarea {
 				}
 	
 				.image.avatar img {
-					border-radius: 100%;
-					width: 100%;
+					border-radius: 120%;
+					width: 120%;
 				}
 
 /* Video */
